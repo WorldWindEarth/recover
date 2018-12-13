@@ -8,11 +8,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="WorldWindJS Web App Template">
+        <meta name="description" content="NASA RECOVER project geobrowser using the WorldWindJS Web App Template">
         <meta name="author" content="Bruce Schubert">
-        <link rel="icon" href="images/world.png">
+        <link rel="icon" href="images/nasa.gov.ico">
 
-        <title>WorldWindJS Web App Template</title>
+        <title>NASA RECOVER - WorldWind Web App</title>
 
         <!-- Bootstrap 4.0 CSS compiled and minified -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -30,9 +30,9 @@
         <!--Main Menu--> 
         <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
             <!--Branding icon and text-->
-            <a class="navbar-brand" href="https://github.com/emxsys/worldwind-web-app">
-                <img src="images/world.png" width="32" height="36" class="d-inline-block align-top" alt="">
-                WorldWindJS
+            <a class="navbar-brand" href="http://giscenter.isu.edu/research/Techpg/nasa_RECOVER/" target="_blank">
+                <img src="images/nasa-logo_32.png" width="32" height="32" class="d-inline-block align-top" alt="NASA">
+                RECOVER
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -84,7 +84,7 @@
                 <canvas id="globe-canvas" class="d-block"
                         style="width: 100%; height: 100%; 
                         background-color: rgb(36,74,101);">
-                    Try Chrome or FireFox.
+                    Try Chrome or Firefox.
                 </canvas>            
             </div>
             <!--WorldWindow Tools-->
@@ -106,7 +106,7 @@
                         <span class="sr-only">Markers Dropdown</span>
                     </button>
                     <!-- Bind the list to the 'markerPalette' observableArray -->
-                    <ul id="marker-palette" 
+                    <ul id="marker-palette-dropdown" 
                         class="dropdown-menu globe-dropdown" 
                         style="left: initial; min-width: 30px"
                         data-bind="foreach: markerPalette">
@@ -130,7 +130,7 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button></h5>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body layers-body">
                                 <div class="list-group" data-bind="template: { name: 'layer-list-template', foreach: overlayLayers}"></div>
                                 <hr/>
                                 <div class="list-group" data-bind="template: { name: 'layer-list-template', foreach: baseLayers}"></div>
@@ -250,11 +250,11 @@
         </main><!-- /.container-fluid -->
 
         <!-- JavaScript placed at the end of the document so the page loads faster -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
-				<script src="https://unpkg.com/worldwindjs@1.6.90/build/dist/worldwind.min.js"></script>
-        <script type="module" src="app.js"></script>
+	<script src="https://unpkg.com/worldwindjs@1.6.90/build/dist/worldwind.min.js"></script>
+        <script type="module" src="js/App.js"></script>
     </body>
 </html>
