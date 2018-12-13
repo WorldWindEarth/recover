@@ -1,8 +1,18 @@
-# WorldWindJS Web App Template
+# NASA RECOVER/WorldWind Integration demo
 
-A template for creating a WorldWindJS web app with Bootstrap and Knockout. Check out the [demo](https://emxsys.github.io/worldwind-web-app).
+This project displays the [NASA RECOVER](http://giscenter.isu.edu/research/Techpg/nasa_RECOVER/) project's ArcGIS data in a [NASA WorldWind](https://worldwind.arc.nasa.gov/web/)-based 3D geobrowser.
 
-This project template lets you quickly build a [WorldWind](https://worldwind.arc.nasa.gov/web/) 
+Check out the [Integration Demo](http://worldwind.earth/recover?folder=RECOVER3_BrianheadFire_UT&default=Fire%20Affected%20Vegetation%20(dNBR)).
+
+This NASA WorldWind-based geobrowser was built from Emxsys' [WorldWind GeoBrowser Template](https://github.com/emxsys/worldwind-web-app)
+
+---
+
+# WorldWind GeoBrowser Template
+
+A template for creating a WorldWind-based GeoBrowser web app with Bootstrap and Knockout. Check out the [demo](https://emxsys.github.io/worldwind-web-app).
+
+This project template lets you quickly build a [WorldWind](https://worldwind.arc.nasa.gov/web/) c
 web app using the community supported [WorldWindJS](https://emxsys.github.io/worldwindjs) library with 
 [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) and 
 [KnockoutJS](http://knockoutjs.com/index.html). You will build a feature-rich, responsive, 
